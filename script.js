@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const bankName = document.getElementById("bankName")
 
   copyButton.addEventListener("click", async () => {
-    const details = `${accountNumber.textContent}\n ${accountName.textContent}\n ${bankName.textContent}`
+    const details = `${accountNumber.textContent}`
 
     try {
       await navigator.clipboard.writeText(details)
