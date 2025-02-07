@@ -1,22 +1,40 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
-  <script src="script.js"></script>
-  <title>Datos de Transferencia</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Bank Account Details</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <div class="container">
-    <h1>Detalles de Transferencia</h1>
-    <div class="account-info" id="account-info">
-      Cuenta: <strong>CARGANDO...</strong><br>
-      Banco: <strong>Banco Ejemplo</strong><br>
-      Nombre: <strong>Juan Pérez</strong><br>
+    <div class="container">
+        <main>
+            <h1>Your Bank Account Details</h1>
+            <div class="card">
+                <div class="card-content">
+                    <div class="detail-group">
+                        <h2>Account Number</h2>
+                        <p id="accountNumber">1234 5678 9012 3456</p>
+                    </div>
+                    <div class="detail-group">
+                        <h2>Account Name</h2>
+                        <p id="accountName">John Doe</p>
+                    </div>
+                    <div class="detail-group">
+                        <h2>Bank</h2>
+                        <p id="bankName">Example Bank</p>
+                    </div>
+                </div>
+                <div class="card-footer">
+                    <button id="copyButton">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon copy-icon"><rect width="14" height="14" x="8" y="8" rx="2" ry="2"/><path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"/></svg>
+                        <span>Copy Details</span>
+                    </button>
+                </div>
+            </div>
+        </main>
     </div>
-    <button id="copy-button">Copiar Datos</button>
-    <p id="copy-success" class="copy-success">¡Datos copiados con éxito!</p>
-  </div>
+    <script src="script.js"></script>
 </body>
 </html>
+
